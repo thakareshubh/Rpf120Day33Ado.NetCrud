@@ -24,8 +24,12 @@ namespace Uc1ConnectToDataBase
             employee.StartDate = DateTime.Now;
             employee.City = "Kazipet";
             employee.Country = "India";
-            //repo.GetAllEmployee();
+            repo.Update(employee);
             repo.Retrieve(employee);
+            repo.Aggregate(employee);
+            repo.GetAllEmployee();
+
+
 
 
         }

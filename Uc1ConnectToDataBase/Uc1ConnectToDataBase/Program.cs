@@ -11,10 +11,10 @@ namespace Uc1ConnectToDataBase
             EmployeeRepo repo = new EmployeeRepo();
             EmployeeModel employee = new EmployeeModel();
 
-            employee.EmployeeName = "Eren Jeager";
+            employee.EmployeeName = "Gren Leager";
             employee.PhoneNumber = "8106529025";
-            employee.Address = "25-4-710";
-            employee.Department = "Hr";
+            employee.Address = "25-5-2710";
+            employee.Department = "Manager";
             employee.Gender = 'M';
             employee.BasicPay = 22000;  
             employee.Deductions = 1500;
@@ -22,12 +22,13 @@ namespace Uc1ConnectToDataBase
             employee.Tax = 300;
             employee.NetPay = 25000;
             employee.StartDate = DateTime.Now;
-            employee.City = "Kazipet";
-            employee.Country = "India";
-            repo.Update(employee);
+            employee.City = "Wasington";
+            employee.Country = "USA";
+           /* repo.Update(employee);
             repo.Retrieve(employee);
             repo.Aggregate(employee);
-            repo.GetAllEmployee();
+            repo.GetAllEmployee();*/
+            repo.AddPayRollOfNewEmployee(employee);
 
 
 
